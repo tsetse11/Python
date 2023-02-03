@@ -2,5 +2,4 @@
 
 a = int(input())
 n = 0
-while a > 2**n:
-    s = str(2**n)
+# while a > 2**n:
