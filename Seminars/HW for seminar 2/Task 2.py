@@ -11,7 +11,7 @@ print('ax^2 + sx + p = 0: ')
 a = int(1)
 s = float(input('s = '))
 p = float(input('p = '))
-discr = s ** 2 - 4 * a * p
+discr = s**2 - 4 * a * p
 print('Дискриминант discr = ', discr)
 if discr > 0:
     x1 = (-s + math.sqrt(discr)) / (2 * a)
