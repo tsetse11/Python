@@ -4,5 +4,22 @@
 # Он называет сумму этих чисел S и их произведение P. 
 # Помогите Кате отгадать задуманные Петей числа.
 
-s = int(input())
-p = int(input())
+import math
+
+print("Введите коэффициенты: ")
+print('ax^2 + sx + p = 0: ')
+a = int(1)
+s = float(input('s = '))
+p = float(input('p = '))
+discr = s ** 2 - 4 * a * p
+print('Дискриминант discr = ', discr)
+if discr > 0:
+    x1 = (-s + math.sqrt(discr)) / (2 * a)
+    x2 = (-s - math.sqrt(discr)) / (2 * a)
+    print('x1 = ', x1, 'x2 = ', x2)
+elif discr == 0:
+    x1 = -s / (2 * a)
+    x2 = -s / (2 * a)
+    print('x1 = ', x1, 'x2 = ', x2)
+else:
+    print("Корней нет")
