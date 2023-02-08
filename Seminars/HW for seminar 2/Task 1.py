@@ -7,8 +7,11 @@ n = int(input())
 heads = tails = 0
 for i in range(n):
     coins = int(input())
-    if coins > 0:
-        i += 1
+    if coins:
+        tails += 1
     else:
         heads += 1
-print(heads)
+if heads > tails:
+    print(tails)
+else:
+    print(heads)
